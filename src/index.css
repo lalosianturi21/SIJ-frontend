@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+
+:root {
+  font-family: Poppins, sans-serif !important;
+}
+
+
+
+body {
+  margin: 0;
+  font-family: Poppins, sans-serif !important;
+}
+
