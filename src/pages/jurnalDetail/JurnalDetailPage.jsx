@@ -65,9 +65,10 @@ const { data, isLoading, isError } = useQuery({
   return (
     <>
       <Helmet>
-    <title>{data?.name} | Sistem Informasi Jurnal</title>
-    <meta property="og:title" content={`${data?.name} | Sistem Informasi Jurnal`} />
+    <meta content={data?.name} name="title" />
     <meta property="og:description" content="Lihat detail jurnal pada Sistem Informasi Jurnal." />
+    <meta content="Hi, I'm Tio Fulalo Simatupang. A junior developer based in Indonesia with a strong passion for software development and artificial intelligence. I have experience in web and mobile app development, integrating AI technology into digital solutions. Always eager to learn and explore new innovations in the tech world." name="description" />
+    <meta content="Tio, Fulalo, Simatupang, Tech, Technology, AI, Artificial Intelligence, Django, Python, Figma,  HTML, CSS, JavaScript,  Open Source,  Flutter, Dart, Bloc, Cubit, Medan, Sumatera Utara, Developer, Machine Learning,  Web Development, Mobile Development, Laravel, React, Node.js, Express.js, MongoDB, MySQL, CodeIgniter, AI-Based Project, Waste Classification,  Software Engineering, Bootcamp, KOMINFO" name="keywords" /> 
     <meta content={data?.cover} property="og:image" />
     <meta content={data?.cover} property="og:image:secure_url" />
     <meta content="1280" property="og:image:width" />
