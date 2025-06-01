@@ -68,9 +68,11 @@ const { data, isLoading, isError } = useQuery({
     <title>{data?.name} | Sistem Informasi Jurnal</title>
     <meta property="og:title" content={`${data?.name} | Sistem Informasi Jurnal`} />
     <meta property="og:description" content="Lihat detail jurnal pada Sistem Informasi Jurnal." />
-    <meta property="og:image" content={data?.image || 'https://example.com/default-image.jpg'} />
+    <meta content={data?.cover} property="og:image" />
+    <meta content={data?.cover} property="og:image:secure_url" />
+    <meta content="1280" property="og:image:width" />
+    <meta content="640" property="og:image:height"/ >
     <meta property="og:type" content="website" />
-    <meta property="og:url" content={window.location.href} />
   </Helmet>
     <MainLayout>
       <div className="w-full px-6 mt-[120px]">
