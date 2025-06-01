@@ -12,7 +12,7 @@ const JurnalCard = ({ jurnal }) => {
         ? ranks.some(rank => ["Q1", "Q2", "Q3", "Q4"].includes(rank.name?.toUpperCase()))
         : false;
 
-    const rankColor = isHighRank ? "text-red-500" : "text-orange-500";
+    const rankColor = isHighRank ? "text-green-500" : "text-orange-500";
 
     const stars = [];
 

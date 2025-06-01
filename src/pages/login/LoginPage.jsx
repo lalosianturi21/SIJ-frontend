@@ -67,7 +67,7 @@ const LoginPage = () => {
     return (
         <MainLayout>
             <ToastContainer position="top-right" autoClose={3000} hideProgressBar />
-            <div className="w-full mt-[120px]">
+            <div className="w-full mt-[200px] mb-40">
                 <section className="container mx-auto px-5 py-1">
                     <div className="w-full max-w-sm mx-auto rounded-xl p-8 border-2 border-blue-500 bg-white">
                         <h1 className="text-signup text-center mb-8">

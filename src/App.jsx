@@ -36,6 +36,7 @@ import Users from './pages/admin/screens/users/Users';
 import CountryPage from './pages/country/CountryPage';
 import InstitutionPage from './pages/institution/InstitutionPage';
 import LanguagePage from './pages/language/LanguagePage';
+import About from './components/About';
 
 function App() {
     useEffect(function () {
@@ -47,6 +48,7 @@ function App() {
                 <Route index path='/' element={<HomePage />} />
                 <Route index path='/register' element={<RegisterPage />} />
                 <Route index path='/login' element={<LoginPage />} />
+                <Route index path='/about' element={<About />} />
                 <Route index path='/profile' element={<ProfilePage />} />
                 <Route index path='/countriesall' element={<CountryPage />} />
                 <Route index path='/institutionsall' element={<InstitutionPage />} />

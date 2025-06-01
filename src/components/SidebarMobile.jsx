@@ -24,26 +24,15 @@ export default function SidebarMobile({ setIsSidebarOpen, setIsDetailSidebarOpen
       <div className="mt-[100px]">
         <ul className="font-medium text-lg">
           {/* Tentang SIJ */}
-          <li className="inline-flex gap-2 items-center mb-5 cursor-pointer" onClick={() => setIsDetailSidebarOpen(true)}>
-            <div>Tentang SIJ</div>
-            <img
-              src="https://pddikti.kemdiktisaintek.go.id/static/media/dropdown-down.1936f1781dd5fc375bc89a8b4c65f3af.svg"
-              alt=""
-              style={{ transform: "rotate(270deg)" }}
-            />
-          </li>
-
-          {/* Kebijakan Privasi */}
-          <li className="mb-5">
-            <a className="cursor-pointer" href="/privacy-policy" onClick={() => setIsSidebarOpen(false)}>
-              Kebijakan Privasi
+          <li className="inline-flex gap-2 items-center mb-5 cursor-pointer">
+            <a href="/about" className="text-inherit">
+              Tentang SIJ
             </a>
           </li>
-
           {/* Sign Up / Account */}
           <li className="mb-5">
             <div
-              className="flex items-center justify-between cursor-pointer hover:text-blue-600 transition"
+              className="flex items-center justify-between cursor-pointer"
               onClick={toggleDropdownAuth}
             >
               <span>{userInfo ? "Account" : "Sign Up"}</span>

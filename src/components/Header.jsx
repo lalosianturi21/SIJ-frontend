@@ -79,14 +79,12 @@ export default function Header({ isSidebarOpen, setIsSidebarOpen }) {
           <ul className="flex gap-7">
             {/* Tentang SIJ */}
             <div className="relative">
-              <li className="flex gap-2 items-center cursor-pointer font-medium text-lg" onClick={toggleDropdownPDDikti}>
-                Tentang SIJ
-                <img
-                  src="https://pddikti.kemdiktisaintek.go.id/static/media/dropdown-down.1936f1781dd5fc375bc89a8b4c65f3af.svg"
-                  alt=""
-                  className={`transition-transform duration-300 ${showDropdownPDDikti ? 'rotate-180' : ''}`}
-                />
-              </li>
+              <a href="/about">
+                <li className="flex gap-2 items-center cursor-pointer font-medium text-lg">
+                  Tentang SIJ
+                </li>
+              </a>
+
               {showDropdownPDDikti && (
                 <div className="absolute left-0 top-full mt-2 p-6 w-[200px] bg-white rounded-md shadow-lg z-50">
                   <div className="flex flex-col gap-2">
@@ -97,11 +95,6 @@ export default function Header({ isSidebarOpen, setIsSidebarOpen }) {
                 </div>
               )}
             </div>
-
-            {/* Kebijakan Privasi */}
-            <li>
-              <a className="text-lg font-medium cursor-pointer" href="/privacy-policy" target="_top">Kebijakan Privasi</a>
-            </li>
 
             {/* Sign Up / Account Dropdown */}
             <div className="relative">
