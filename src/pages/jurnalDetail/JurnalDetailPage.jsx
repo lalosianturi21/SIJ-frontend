@@ -72,7 +72,7 @@ const { data, isLoading, isError } = useQuery({
     <meta content={data?.cover} property="og:image" />
     <meta content={data?.cover} property="og:image:secure_url" />
     <meta content="1280" property="og:image:width" />
-    <meta content="640" property="og:image:height"/ >
+    <meta content="640" property="og:image:height"/>
     <meta property="og:type" content="website" />
   </Helmet>
     <MainLayout>
@@ -107,7 +107,7 @@ const { data, isLoading, isError } = useQuery({
               <div className="rounded-xl overflow-hidden shadow-md">
                 <img
                   src={data.cover}
-                  alt={data.title}
+                  alt={data.name}
                   className="cover-detail mx-auto block"
                 />
               </div>
