@@ -73,3 +73,23 @@ export const createJurnal = async ({ token }) => {
         throw new Error(error.message);
     }
 };
+
+export const exportJurnalCSV = async (token) => {
+  try {
+    const config = {
+      headers: {
+        Authorization: `Bearer ${token}`,  // Include Bearer token in headers
+      },
+      responseType: "arraybuffer", // Ensure we handle binary data
+    };
+
+    const response = await axios.get("/api/jurnals/export", config);  // Pass the config with the token
+
+    return response; // Return the response containing CSV data
+  } catch (error) {
+    if (error.response && error.response.data.message) {
+      throw new Error(error.response.data.message);
+    }
+    throw new Error(error.message);
+  }
+};
