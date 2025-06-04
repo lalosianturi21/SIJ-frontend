@@ -125,7 +125,7 @@ const JurnalDetailPage = () => {
 
             {/* Tanggal */}
             <p className="text-sm text-gray-600 text-end">
-              {new Date(data?.createdAt || Date.now()).toLocaleDateString('id-ID', {
+              Last Update : {new Date(data?.createdAt || Date.now()).toLocaleDateString('id-ID', {
                 year: 'numeric',
                 month: 'long',
                 day: 'numeric',
