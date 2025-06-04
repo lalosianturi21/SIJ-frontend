@@ -24,7 +24,7 @@ const Header = () => {
     mutationFn: ({ token }) => createJurnal({ token }),
     onSuccess: (data) => {
       queryClient.invalidateQueries(["jurnals"]);
-      toast.success("Jurnal created, edit it now! 🎉", { autoClose: 3000 });
+      toast.success("Jurnal created, edit it now! 🎉", { autoClose: 500 });
       navigate(`/admin/jurnals/manage/edit/${data.slug}`);
     },
     onError: (error) => {
