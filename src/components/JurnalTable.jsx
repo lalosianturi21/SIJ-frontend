@@ -8,7 +8,7 @@ const JurnalTable = ({ jurnal, index  }) => {
         <>
             <tr className={rowColor}>
                  <td className="px-4">
-                    <td className="px-1">
+                    <td className="px-1 pb-2">
                         {jurnal.cover ? (
                             <img
                                 src={jurnal.cover}
