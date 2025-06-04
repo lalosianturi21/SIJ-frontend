@@ -262,7 +262,7 @@ const ManageJurnals = () => {
               <button
                 disabled={isLoadingDeleteData}
                 type="button"
-                className="px-3 py-2 bg-red-500 hover:bg-red-600 text-white text-xs font-semibold rounded-lg transition duration-200 disabled:opacity-70"
+                className="px-3 py-2 text-white text-xs font-semibold rounded-lg transition duration-200 bg-red-500 hover:bg-red-600 space-button"
                 onClick={() => {
                   deleteDataHandler({
                     slug: jurnal?.slug,
