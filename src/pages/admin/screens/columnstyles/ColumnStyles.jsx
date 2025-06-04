@@ -41,7 +41,7 @@ const ColumnStyles = () => {
                 createColumnStyle({ token, name, description }),
             onSuccess: () => {
                 queryClient.invalidateQueries(["columnstyles"]);
-                toast.success("Created Successfully! 🎉", { autoClose: 3000 });
+                toast.success("Created Successfully! 🎉", { autoClose: 500 });
                 setColumnStyleName("");
                 setColumnStyleDescription("");
             },

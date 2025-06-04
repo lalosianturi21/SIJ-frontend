@@ -41,7 +41,7 @@ const Tracks = () => {
                 createTrack({ token, name, description }),
             onSuccess: () => {
                 queryClient.invalidateQueries(["tracks"]);
-                toast.success("Created Successfully! 🎉", { autoClose: 3000 });
+                toast.success("Created Successfully! 🎉", { autoClose: 500 });
                 setTrackName("");
                 setTracksDescription("");
             },

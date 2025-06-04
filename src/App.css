@@ -3415,6 +3415,10 @@ img,video {
   word-break: break-word; /* pecah kata jika panjang */
 }
 
+.space-button {
+    margin-bottom: 120px;
+}
+
 @media (max-width: 800px) {
 .upload-image {
     width: 400px;

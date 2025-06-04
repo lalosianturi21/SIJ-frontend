@@ -40,7 +40,7 @@ const Countries = () => {
                 createCountry({ token, name}),
             onSuccess: () => {
                 queryClient.invalidateQueries(["countries"]);
-                toast.success("Created Successfully! 🎉", { autoClose: 3000 });
+                toast.success("Created Successfully! 🎉", { autoClose: 500 });
                 setCountryName("");
             },
             onError: (error) => {

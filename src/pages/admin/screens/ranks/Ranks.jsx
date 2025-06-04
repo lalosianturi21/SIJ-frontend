@@ -41,7 +41,7 @@ const Ranks = () => {
                 createRank({ token, name, description }),
             onSuccess: () => {
                 queryClient.invalidateQueries(["ranks"]);
-                toast.success("Created Successfully! 🎉", { autoClose: 3000 });
+                toast.success("Created Successfully! 🎉", { autoClose: 500 });
                 setRankName("");
                 setRankDescription("");
             },

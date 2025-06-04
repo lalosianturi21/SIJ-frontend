@@ -240,7 +240,7 @@ const ManageJurnals = () => {
             </button>
             <Link
               to={`/admin/jurnals/manage/edit/${jurnal?.slug}`}
-              className="editbutton px-3 py-2 text-white text-xs font-semibold rounded-lg transition duration-200 bg-yellow-500 hover:bg-yellow-600"
+              className="editbutton px-3 py-2 text-white text-xs font-semibold rounded-lg transition duration-200 bg-yellow-500 hover:bg-yellow-600 space-button"
             >
               Edit
             </Link>

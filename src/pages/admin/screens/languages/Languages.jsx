@@ -40,7 +40,7 @@ const Languages = () => {
                 createLanguage({ token, name}),
             onSuccess: () => {
                 queryClient.invalidateQueries(["languages"]);
-                toast.success("Created Successfully! 🎉", { autoClose: 3000 });
+                toast.success("Created Successfully! 🎉", { autoClose: 500 });
                 setLanguageName("");
             },
             onError: (error) => {

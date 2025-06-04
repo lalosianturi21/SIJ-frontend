@@ -40,7 +40,7 @@ const PublishPeriods = () => {
                 createPublishPeriod({ token, month}),
             onSuccess: () => {
                 queryClient.invalidateQueries(["publishperiods"]);
-                toast.success("Created Successfully! 🎉", { autoClose: 3000 });
+                toast.success("Created Successfully! 🎉", { autoClose: 500 });
                 setPublishPeriodMonth("");
             },
             onError: (error) => {

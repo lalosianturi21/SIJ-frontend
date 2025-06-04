@@ -408,7 +408,7 @@ const EditJurnal = () => {
               <button
                 disabled={isLoadingUpdateJurnalDetail}
                 onClick={handleUpdateJurnal}
-                className="w-full bg-purple-500 text-white font-semibold p-3 rounded-lg hover:bg-purple-600"
+                className="w-full bg-purple-500 text-white font-semibold p-3 rounded-lg hover:bg-purple-600 space-button"
               >
                 {isLoadingUpdateJurnalDetail ? "Updating..." : "Update Jurnal"}
               </button>

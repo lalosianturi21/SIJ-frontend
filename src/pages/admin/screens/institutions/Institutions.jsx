@@ -40,7 +40,7 @@ const Institutions = () => {
                 createInstitution({ token, name}),
             onSuccess: () => {
                 queryClient.invalidateQueries(["institutions"]);
-                toast.success("Created Successfully! 🎉", { autoClose: 3000 });
+                toast.success("Created Successfully! 🎉", { autoClose: 500 });
                 setInstitutionName("");
             },
             onError: (error) => {

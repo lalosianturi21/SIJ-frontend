@@ -41,7 +41,7 @@ const Currencies = () => {
                 createCurrency({ token, name, symbol }),
             onSuccess: () => {
                 queryClient.invalidateQueries(["currencies"]);
-                toast.success("Created Successfully! 🎉", { autoClose: 3000 });
+                toast.success("Created Successfully! 🎉", { autoClose: 500 });
                 setCurrencyName("");
                 setCurrencySymbol("");
             },
