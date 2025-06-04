@@ -3415,6 +3415,13 @@ img,video {
   word-break: break-word; /* pecah kata jika panjang */
 }
 
+@media (max-width: 800px) {
+.upload-image {
+    width: 400px;
+  }
+}
+
+
 /* Responsive untuk layar kecil */
 @media (max-width: 640px) {
   .info-row {
@@ -3430,7 +3437,12 @@ img,video {
   .info-value {
     width: 100%;
   }
+.upload-image {
+    width: 250px;
+  }
+
 }
+
 
 
 

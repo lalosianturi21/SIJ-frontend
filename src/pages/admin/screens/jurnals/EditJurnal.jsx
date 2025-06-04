@@ -258,7 +258,7 @@ const EditJurnal = () => {
                 ) : initialCover ? (
                   <img src={data?.cover} alt={data?.name} className="rounded-lg w-150 h-68" />
                 ) : (
-                  <div className="w-150 h-68 bg-gray-200 flex justify-center items-center rounded-lg">
+                  <div className="upload-image w-190 h-68 bg-gray-200 flex justify-center items-center rounded-lg">
                     <HiOutlineCamera className="text-gray-600 w-10 h-10" />
                   </div>
                 )}

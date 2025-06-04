@@ -31,7 +31,7 @@ const AdminLayout = () => {
   if (profileIsLoading) {
     return (
       <div className="w-full min-h-screen flex justify-center items-center">
-        <h3 className="text-2xl text-white">Loading...</h3>
+        <h3 className="text-2xl text-black">Loading...</h3>
       </div>
     );
   }

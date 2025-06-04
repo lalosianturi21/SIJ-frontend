@@ -65,7 +65,7 @@ const Header = () => {
 
         {/* Sidebar */}
         {isMenuActive && (
-          <div className="fixed inset-0 z-40">
+          <div className="fixed inset-0 z-120">
             <div className="fixed inset-0 bg-black/50" onClick={toggleMenuHandler} />
             <div className="bg-zinc-900 fixed top-0 bottom-0 left-0 z-50 overflow-y-auto p-4 w-[300px]">
               <Link to="/">
