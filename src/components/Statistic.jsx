@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { getAllInstitutions } from "../services/index/jurnalsInstitutions";
-import { getAllCountries } from "../services/index/jurnalsCountries";
-import { getAllLanguages } from "../services/index/jurnalsLanguages";
-import { getAllPublishPeriods } from "../services/index/jurnalsPublishPeriods";
+import { getAllInstitutions } from "../services/index/countjurnals";
+import { getAllCountries } from "../services/index/countjurnals";
+import { getAllLanguages } from "../services/index/countjurnals";
+import { getAllPublishPeriods } from "../services/index/countjurnals";
 
 
 const Statistic = () => {

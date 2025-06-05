@@ -1,14 +1,16 @@
 // Admin.jsx
 import React, { useEffect, useState } from "react";
-import { getAllJurnals } from "../../../services/index/jurnals";
-import { getAllRanks } from "../../../services/index/jurnalsRanks";
-import { getAllTracks } from "../../../services/index/jurnalsTracks";
-import { getAllInstitutions } from "../../../services/index/jurnalsInstitutions";
-import { getAllCurrencies } from "../../../services/index/jurnalsCurrencies";
-import { getAllCountries } from "../../../services/index/jurnalsCountries";
-import { getAllLanguages } from "../../../services/index/jurnalsLanguages";
-import { getAllColumnStyles } from "../../../services/index/jurnalsColumnStyles";
-import { getAllPublishPeriods } from "../../../services/index/jurnalsPublishPeriods";
+import {
+  getAllJurnals,
+  getAllRanks,
+  getAllTracks,
+  getAllInstitutions,
+  getAllCurrencies,
+  getAllCountries,
+  getAllLanguages,
+  getAllColumnStyles,
+  getAllPublishPeriods
+} from "../../../services/index/countjurnals";
 
 const Admin = () => {
   const [totalJurnals, setTotalJurnals] = useState(0);
