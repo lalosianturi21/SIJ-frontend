@@ -32,14 +32,14 @@ const AdminLayout = () => {
   if (profileIsLoading) {
     return (
       <div className="w-full min-h-screen flex justify-center items-center">
-       <tr>
-  <td colSpan={5} className="text-center py-10 w-full">
-    <div className="flex justify-center items-center gap-2">
-      <FaSpinner className="animate-spin text-blue-500 text-4xl" />
-      <span className="text-black text-sm">Loading...</span>
-    </div>
-  </td>
-</tr>
+        <tr>
+          <td colSpan={5} className="text-center py-10 w-full">
+            <div className="flex justify-center items-center gap-2">
+              <FaSpinner className="animate-spin text-blue-500 text-4xl" />
+              <span className="text-black text-sm">Loading...</span>
+            </div>
+          </td>
+        </tr>
       </div>
     );
   }

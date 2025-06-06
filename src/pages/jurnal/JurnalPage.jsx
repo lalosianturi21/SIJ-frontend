@@ -85,7 +85,7 @@ const JurnalPage = () => {
 
         <div className="mx-auto items-center justify-center max-w-7xl">
           <AsyncSingleSelectDropdown
-            placeholder={"Search by rank..."}
+            placeholder={"Search by sinta..."}
             loadOptions={promiseOptions}
             onChange={(selectedValue) => {
               setRank(selectedValue?.value || ""); // ✅ null -> ""
