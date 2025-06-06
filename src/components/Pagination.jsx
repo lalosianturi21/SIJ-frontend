@@ -61,8 +61,8 @@ const Pagination = ({
               type="button"
               className={` w-full px-4 py-2 text-base border ${
                 pageNumber === currentPage
-                  ? "text-white bg-purple-500"
-                  : "text-white bg-orange-500 hover:bg-gray-400"
+                  ? "text-white bg-blue-500"
+                  : "text-black bg-white hover:bg-gray-400"
               }`}
               onClick={() => onPageChange(pageNumber)}
             >
