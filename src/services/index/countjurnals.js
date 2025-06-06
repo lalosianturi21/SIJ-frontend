@@ -73,7 +73,7 @@ export const getAllRanks = async () => {
   }
 };
 
-export const getAllTracks = async () => {
+export const getAllTracks = async (token) => {
   try {
     const { data, headers } = await axios.get(`/api/jurnal-tracks/counttracks`);
     return { data, headers };
