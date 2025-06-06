@@ -47,7 +47,7 @@ const JurnalDetailPage = () => {
       )
       : false;
 
-    const rankColor = isHighRank ? "text-green-500" : "text-yellow-500";
+    const rankColor = isHighRank ? "text-green-500" : "text-orange-500";
 
     const stars = [];
 
